@@ -8,119 +8,173 @@ img {
     max-height: 100%;
 }
 body{
-
-background-image: url(/mohi/home-03-1920x1200\ \(2\).jpg)
+background-image: url(./img/home-03-1920x1200\ \(3\).jpg)
 }
-
-.ourservis {  
-display: flex;
-flex-direction:column;
-align-items: center;
-justify-content: center;
-gap: 1rem;
-padding-bottom: 2rem;
-/* padding-top: 1rem; */
-}
-
-.ourservis .servis{
-    font-size: 6rem;
-    font-weight: 900;
-    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: white;
-
-}
-.ourservis a:hover{
-    cursor: pointer;
-
-}
-
-.ourservis .our{
-
-    color: white;
-    font-size: 6rem;
-    font-weight:lighter;
-    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-.ourservis p{
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: white;
-    line-height: 2rem;
-    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
-}
-.ourservis button{
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-    color: white;
- 
-
-}
-.ourservis button:hover{
-    color: rgb(227, 18, 18);
-    transition: 0.6s;
-    cursor: pointer;
-
-}
-
-    
-
-
-
-.ourservis .boxes {
-    display: flex;
-    align-items: center;
-    flex-direction:row-reverse;
-    gap: 2rem;
- }  
- .ourservis .boxes .box1 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
- .ourservis .brake{
-    background-color: rgba(234, 54, 54, 0.567);
-    width: 22rem;
-    height: 13.1rem;
+.our h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
     flex-direction: column;
-    padding-left: 1rem;
- }
- .ourservis .brake:hover{
-    background-color: rgba(102, 85, 85, 0.588);
-    transition: 0.6s;
+    font-size: 5rem;
+    font-family: 100;
+    color: white;
 }
-
- .ourservis .boxes .box2 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
- .ourservis .boxes2 .box3 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
  
-}
- .ourservis .boxes2 .box4 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
- 
- }
+          .card {
+            display: flex;
+             gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            flex-direction:row-reverse
 
- .ourservis .boxes2 {
-    display: flex;
-    align-items: center;
-    flex-direction:row-reverse;
-    gap: 2rem;
+          }
+          .card .card1 {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem;
+          }
+          .card .card2 {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem;
+          }
+
+         .card .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(165, 42, 42, 0.735);
+            gap: 2rem;
+         }
+         .card .box:hover{
+            background-color: rgba(98, 92, 92, 0.482);
+            transition: 0.7s;
+        }
+
+         .card .box img {
+            width: 30rem;
+         }
+         .card .box img:hover{
+            cursor: pointer;
+         }
+
+         .card .brake button{
+            font-size: 2rem;
+            color: white;
+            border:none;
+            background: none;
+         }
+            .card .brake button:hover{
+                cursor: pointer;
+                color: rgb(165, 42, 42);
+
+         }
+         .card .brake p{
+            color: white;
+            font-size: 1.5rem;
+         }
+
+@media(max-width:1000px){
+    html{
+        font-size: 10px;
+    }
+               
+              .card .card2 {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 2rem;
+              }
     
- }  
+             .card .box {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(165, 42, 42, 0.735);
+                gap: 2rem;
+             }
+             .card .box:hover{
+                background-color: rgba(98, 92, 92, 0.482);
+                transition: 0.7s;
+            }
+    
+             .card .box img {
+                width: 30rem;
+             }
+             .card .box img:hover{
+                cursor: pointer;
+             }
+    
+             .card .brake button{
+                font-size: 2rem;
+                color: white;
+                border:none;
+                background: none;
+             }
+                .card .brake button:hover{
+                    cursor: pointer;
+                    color: rgb(165, 42, 42);
+    
+             }
+             .card .brake p{
+                color: white;
+                font-size: 1.5rem;
+             }
+    
+}
+@media(max-width:780px){
+    html{
+        /* font-size: 10px; */
+    }
+    .card {
+        display: flex;
+         gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        flex-direction:column-reverse;
 
- 
+    .card .card2 {
+        display: flex;
+        flex-direction: column-reverse
+        gap: 2rem;
+      }
+
+     .card .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(165, 42, 42, 0.735);
+        gap: 2rem;
+     }
+     .card .box:hover{
+        background-color: rgba(98, 92, 92, 0.482);
+        transition: 0.7s;
+    }
+
+     .card .box img {
+        width: 30rem;
+     }
+     .card .box img:hover{
+        cursor: pointer;
+     }
+
+     .card .brake button{
+        font-size: 2rem;
+        color: white;
+        border:none;
+        background: none;
+     }
+        .card .brake button:hover{
+            cursor: pointer;
+            color: rgb(165, 42, 42);
+
+     }
+     .card .brake p{
+        color: white;
+        font-size: 1.5rem;
+     }
+}
