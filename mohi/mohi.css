@@ -9,8 +9,53 @@ img {
 }
 body{
 background-image: url(./img/home-03-1920x1200\ \(3\).jpg)
+
 }
-.our h1{
+ul {
+   list-style: none;
+ }
+ button {
+   background-color: aqua;
+ }
+a{
+   text-decoration: none;
+   color: white;
+   font-size: larger;
+}
+i {
+    color: rgb(247, 244, 250);
+    padding: 0;
+    margin: 0;
+ }
+a:hover{          
+   color: rgb(201, 47, 47);
+   transition: 1s;
+}
+ .heder {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction:row ;
+   background-color: rgba(40, 43, 43, 0.692);
+   width: 100%;
+   height: 4rem;
+   gap: 25rem;
+   padding: 2.5rem;
+}
+ .hedermenu {
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+ }
+ .our h1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +180,7 @@ background-image: url(./img/home-03-1920x1200\ \(3\).jpg)
         align-items: center;
         padding: 2rem;
         flex-direction:column-reverse;
-
+    }
     .card .card2 {
         display: flex;
         flex-direction: column-reverse
